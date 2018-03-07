@@ -1,0 +1,4 @@
+<!--welcome.wxml-->
+<view class="container">
+  <image class="logo" mode="widthFix" src="../../imgs/icon/welcome.png"></image>
+</view>

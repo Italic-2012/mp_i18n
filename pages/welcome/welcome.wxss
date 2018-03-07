@@ -1,0 +1,14 @@
+/* welcome.wxss */
+.container{
+  padding:  0;
+  flex-direction:row;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+  
+.logo {
+  width:560rpx;
+  margin-top:240rpx;
+}

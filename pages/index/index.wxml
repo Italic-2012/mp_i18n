@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class='nick-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <view class="user-motto">{{i18n.translate}}</view>
+    <view class="user-motto">{{i18n.chooseOne}}</view>
+    <view class="user-motto">{{i18n.dynamic}}</view>
+  </view>
+  <view class='lang_wrap'>
+    <button bindtap="InChinese">切换中文</button>
+    <button bindtap="InEnglish">IN ENGLISH</button>
+  </view>
+</view>
